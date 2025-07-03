@@ -1628,7 +1628,7 @@
                                     <span style="font-size: 13px; font-weight: 500;">Ранг 5: Сержант</span>
                                 </div>
 								<div style="display: flex; align-items: center; gap: var(--space-sm); padding: var(--space-sm); background: var(--bg-tertiary); border-radius: var(--radius-sm);">
-                                    <div style="width: 8px; height: 8px; background: var(--secondary-orange); border-radius: 50%;"></div>
+                                    <div style="width: 8px; height: 8px; background: var(--accent-cyan); border-radius: 50%;"></div>
                                     <span style="font-size: 13px; font-weight: 500;">Ранг 6: Старшина</span>
                                 </div>
                             </div>
@@ -1684,7 +1684,7 @@
                     <span class="gradient-text">Галерея</span> подій
                 </h2>
                 <p class="section-description fade-in-up">
-                    Фотозвіти з важливих заходів та повсякденної роботи служби
+                    Фотозвіти з важливих заходів та повсякденної служби в ЗСУ
                 </p>
             </div>
             
@@ -1743,7 +1743,7 @@
                     Часті <span class="gradient-text">запитання</span>
                 </h2>
                 <p class="section-description fade-in-up">
-                    Відповіді на найпоширеніші питання про роботу в ДКВС
+                    Відповіді на найпоширеніші питання про службу в ЗСУ
                 </p>
             </div>
             
@@ -1824,24 +1824,6 @@
 
     <!-- Scripts -->
     <script type="module">
-        // Firebase Configuration
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
-        import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js";
-
-        const firebaseConfig = {
-            apiKey: "AIzaSyBzefxFDTHQqXFHg9t08JTiL5EaH8si1oY",
-            authDomain: "dkvs-1ec88.firebaseapp.com",
-            databaseURL: "https://dkvs-1ec88-default-rtdb.firebaseio.com/",
-            projectId: "dkvs-1ec88",
-            storageBucket: "dkvs-1ec88.appspot.com",
-            messagingSenderId: "167430647129",
-            appId: "1:167430647129:web:ab209fec7735f20b597048",
-            measurementId: "G-H6LKMLYD10"
-        };
-
-        const app = initializeApp(firebaseConfig);
-        const db = getDatabase(app);
-
         // Loading Screen
         setTimeout(() => {
             document.getElementById('loading').classList.add('hidden');
