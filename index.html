@@ -45,10 +45,10 @@
             --accent-green: #0e805a;
             --accent-red: #EF4444;
             
-            --bg-primary: #0a0a0f2b;
-            --bg-secondary: #11111800;
+            --bg-primary: #0A0A0F;
+            --bg-secondary: #111118;
             --bg-tertiary: #1A1A24;
-            --bg-card: #1e1e2e5e;
+            --bg-card: #1E1E2E;
             --bg-glass: rgba(30, 30, 46, 0.85);
             
             --text-primary: #FFFFFF;
@@ -944,7 +944,7 @@
         }
 
         .fade-in-up.visible {
-            opacity: 0.7;
+            opacity: 1;
             transform: translateY(0);
         }
 
@@ -1064,25 +1064,6 @@
                 right: var(--space-lg);
                 font-size: 14px;
             }
-		 /* Стилі для відео фону */
-    .video-background {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      z-index: -1;  /* Відео буде позаду всього контенту */
-    }
-    
-    .video-background iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      pointer-events: none; /* Відео не буде взаємодіяти з користувачем */
-    }
     </style>
 </head>
 	<!-- Google tag (gtag.js) -->
@@ -1095,21 +1076,12 @@
   gtag('config', 'G-Y32VQD9EPK');
 </script>
 <body>
-<!-- Відео фон -->
-  <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; z-index: -1;">
-    <iframe 
-      src="https://www.youtube.com/embed/SiunkDt__u4?autoplay=1&mute=1&loop=0&playlist=SiunkDt__u4" 
-      frameborder="0" 
-      allow="autoplay; fullscreen" 
-      allowfullscreen
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
-    </iframe>
-  </div>
     <!-- Loading Screen -->
     <div class="loading" id="loading">
         <div class="spinner"></div>
         <div class="loading-text">Зачекайте, ми видаємо вам догану...</div>
     </div>
+
     <!-- Header -->
     <header class="header" id="header">
         <div class="container">
@@ -1310,19 +1282,18 @@
                         </div>
                     </div>
                 </div>
-				
+                       
                 <div class="leader-card fade-in-up">
-                    <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/84.webp" alt="Олег Яворівський" class="leader-image">
+                    <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/97.webp" alt="Віталій Шкарупа" class="leader-image">
                     <div class="leader-info">
-                        <h3 class="leader-name">Олег Яворівський</h3>
+                        <h3 class="leader-name">Віталій Шкарупа</h3>
                         <div class="leader-position">Генерал ЗСУ</div>
                         <div class="leader-experience">
-                            <i class="fas fa-star" style="color: var(--accent-cyan);"></i>
-                            Досвід роботи: 3+ років
+                            <i class="fas fa-user-plus" style="color: var(--secondary-orange);"></i>
                         </div>
                     </div>
                 </div>
-                
+				    
                 <div class="leader-card fade-in-up">
                     <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/97.webp" alt="Віктор Гончар" class="leader-image">
                     <div class="leader-info">
@@ -1334,19 +1305,7 @@
                         </div>
                     </div>
                 </div>
-                
-                <div class="leader-card fade-in-up">
-                    <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/97.webp" alt="Віталій Шкарупа" class="leader-image">
-                    <div class="leader-info">
-                        <h3 class="leader-name">Віталій Шкарупа</h3>
-                        <div class="leader-position">Полковник ЗСУ</div>
-                        <div class="leader-experience">
-                            <i class="fas fa-user-plus" style="color: var(--secondary-orange);"></i>
-                            Куратор: Національної Гвардії України
-                        </div>
-                    </div>
-                </div>
-					
+               
                 <div class="leader-card fade-in-up">
                     <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/97.webp" alt="Дмитро Стадніков" class="leader-image">
                     <div class="leader-info">
@@ -1364,6 +1323,9 @@
                     <div class="leader-info">
                         <h3 class="leader-name">Никита Бойко</h3>
                         <div class="leader-position">Полковник ЗСУ</div>
+                          <div class="leader-experience">
+                            <i class="fas fa-user-plus" style="color: var(--secondary-orange);"></i>
+                            Куратор: Сил Спеціальних операцій
                     </div>	
                 </div>
                 
@@ -1372,38 +1334,31 @@
                     <div class="leader-info">
                         <h3 class="leader-name">Владислав Залужний</h3>
                         <div class="leader-position">Полковник ЗСУ</div>
+                          <div class="leader-experience">
+                            <i class="fas fa-user-plus" style="color: var(--secondary-orange);"></i>
+                            Куратор: Національної Гвардії України
                     </div>	
                 </div>
                
                 <div class="leader-card fade-in-up">
                     <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/94.webp" alt="Даниил Мосийчук" class="leader-image">
                     <div class="leader-info">
-                        <h3 class="leader-name">Даниил Мосийчук</h3>
+                        <h3 class="leader-name">Данило Яворівський</h3>
                         <div class="leader-position">Підполковник ЗСУ</div>
+                          <div class="leader-experience">
+                            <i class="fas fa-user-plus" style="color: var(--secondary-orange);"></i>
+                            Керівник: Сил Спеціальних операцій
                     </div>	
                 </div>
 
-                <div class="leader-card fade-in-up">
-                    <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/94.webp" alt="Дмитро Яворівський" class="leader-image">
-                    <div class="leader-info">
-                        <h3 class="leader-name">Дмитро Яворівський</h3>
-                        <div class="leader-position">Підполковник ЗСУ</div>
-                    </div>	
-                </div>
-
-                <div class="leader-card fade-in-up">
-                    <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/94.webp" alt="Данило Лубянов" class="leader-image">
-                    <div class="leader-info">
-                        <h3 class="leader-name">Данило Лубянов</h3>
-                        <div class="leader-position">Підполковник ЗСУ</div>
-                    </div>	
-                </div>
-				
                 <div class="leader-card fade-in-up">
                     <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/92.webp" alt="Кирило Санхо" class="leader-image">
                     <div class="leader-info">
                         <h3 class="leader-name">Олег Бачевський</h3>
                         <div class="leader-position">Підполковник ЗСУ</div>
+                          <div class="leader-experience">
+                            <i class="fas fa-user-plus" style="color: var(--secondary-orange);"></i>
+                            Керівник: Головного Управління Розвідки
                     </div>	
                 </div>
 				   
@@ -1412,30 +1367,20 @@
                     <div class="leader-info">
                         <h3 class="leader-name">Кирило Санхо</h3>
                         <div class="leader-position">Підполковник ЗСУ</div>
+                          <div class="leader-experience">
+                            <i class="fas fa-user-plus" style="color: var(--secondary-orange);"></i>
+                            Керівник: Національної Гвардії України
                     </div>	
                 </div>
-               
-                <div class="leader-card fade-in-up">
-                    <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/92.webp" alt="Юрій Горбунько" class="leader-image">
-                    <div class="leader-info">
-                        <h3 class="leader-name">Юрій Горбунько</h3>
-                        <div class="leader-position">Майор ЗСУ</div>
-                    </div>	
-                </div>
-				
-                <div class="leader-card fade-in-up">
-                    <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/92.webp" alt="Максим Бобров" class="leader-image">
-                    <div class="leader-info">
-                        <h3 class="leader-name">Максим Бобров</h3>
-                        <div class="leader-position">Майор ЗСУ</div>
-                    </div>	
-                </div>
-				
+ 
                 <div class="leader-card fade-in-up">
                     <img src="https://ukraine-gta.com.ua/images/game/skins/300x280/92.webp" alt="Кілліан Мерфі" class="leader-image">
                     <div class="leader-info">
                         <h3 class="leader-name">Кілліан Мерфі</h3>
                         <div class="leader-position">Майор ЗСУ</div>
+                         <div class="leader-experience">
+                            <i class="fas fa-user-plus" style="color: var(--secondary-orange);"></i>
+                            Заступник керівника: Територіального центру комплектування
                     </div>	
                 </div>
                 <div class="leader-card fade-in-up">
@@ -1443,6 +1388,9 @@
                     <div class="leader-info">
                         <h3 class="leader-name">Джонатан Джостар</h3>
                         <div class="leader-position">Майор ЗСУ</div>
+                          <div class="leader-experience">
+                            <i class="fas fa-user-plus" style="color: var(--secondary-orange);"></i>
+                            Заступник керівника: Головного Управління Розвідки
                     </div>	
                 </div>
             </div>
